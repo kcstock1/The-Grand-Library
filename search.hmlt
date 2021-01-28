@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+
+<!--Sources https://www.w3schools.com/tags/tag_input.asp-->
+<!--Sources https://stackoverflow.com/questions/4309950/how-to-align-input-forms-in-html-->
+<!--Sources https://stackoverflow.com/questions/10853881/how-to-remove-underline-from-a-link-in-html-->
+
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="Homestyles.css" />
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+      <!--Navbar -->
+  <ul class="navb">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="search.html">Search</a></li>
+      <li><a href="borrowinghistory.html">Borrowing History</a></li>
+      <li><a href="genres.html">Genres</a></li>
+      <li><a href="profile.html">Profile</a></li>
+  </ul>
+    <br />
+    <br />
+
+    <div class="box">
+      <form>
+        <label for="searchboxtitle">Search Title</label>
+        <input id="searchboxtitle" name="searchboxtitle" type="search">
+        <br />
+        <label for="searchboxauth">Search Author</label>
+        <input id="searchboxauth" name="searchboxauth" type="search">
+      
+        <br />
+        <label for="searchboxgenre">Search Genre</label>
+        <input id="searchboxgenre" name="searchboxgenre" type="search">
+        
+        <br />
+        <label for="submit"></label>
+        <input id="submit" name="submit" type="submit" value="Search">
+      
+      </form>
+    </div>
+    <div class="results">
+        <table>
+            <thead><tr><td>Title</td><td>Author</td><td>Availbility</td></tr></thead>
+        </table>
+     </div>
+
+</body>
+</html>
