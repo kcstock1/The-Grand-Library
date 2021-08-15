@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link rel="stylesheet" href="Homestyles.css" />
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <!--Navbar -->
+
+    <h1>Borrowing Borrower History</h1>
+    <br />
+
+	  <form>
+
+	 <label for="bookoptions">Book</label>        
+	 <select name="bookoptions" id="bookoptions">Book
+	 </select>
+
+	 <div id="container"></div>
+
+
+	 <label for="borroweroptions">Borrower</label>        
+	 <select name="borroweroptions" id="borroweroptions">Borrower	 
+	 </select>
+
+	 <div id="container2"></div>	
+
+        <label for="borrowduedate">Due Date (Required) (YYYY-MM-DD)</label>
+        <input id="borrowduedate" name="borrowduedate" type="text">
+
+		 <br />
+
+        <label for="borrowreturndate">Return Date (Optional) (YYYY-MM-DD)</label>
+        <input id="borrowreturndate" name="borrowreturndate" type="text">
+        
+        <br />
+        <label for="borrowsubmit">Submit</label>
+        <input id="borrowsubmit" name="borrowsubmit" type="submit" value="Add">
+        <br />      
+        <br />
+      </form>
+
+
+
+    <table name="tabledata" id="tabledata">
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Title</th>
+          <th>Due Date </th>
+		  <th>Returned Date</th>
+        </tr>
+        {{#items}}
+        <tr>
+          <td>{{Borrower}}</td>
+		  <td>{{title}}</td>
+          <td>{{DueDate}}</td>
+          <td>{{returnDate}}</td>
+		  <td><button type="button" class="delete" name="delete" id="{{id}}">Delete</button></td>
+        </tr>
+        {{/items}}
+      </tbody>
+
+
+    </table>
+
+    <p>{{results}}</p>
+
+
+  </body>
+  <script src="/borrowerhistory.js"></script>
+

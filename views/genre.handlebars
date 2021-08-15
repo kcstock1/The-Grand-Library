@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link rel="stylesheet" href="Homestyles.css" />
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <!--Navbar -->
+
+    <h1>Genres</h1>
+       <br />
+
+<table name="tabledata" id="tabledata">
+  <tbody>
+  <tr>
+    <th>Genre_id</th>
+    <th>Name</th>
+    <th>Is Restricted</th>
+    </tr>
+    {{#items}}
+      <tr>
+        <td>{{genre_id}}</td>        
+        <td>{{name}}</td>        
+        <td>{{is_restricted}}</td>          
+        
+      </tr>
+    {{/items}}
+  </tbody>
+    
+  
+</table>
+
+  <p>{{results}}</p>
+
+
+  </body>
+   <script src="/client.js"></script>
+
+
+<script src="/genre.js"></script>
+

@@ -1,0 +1,58 @@
+<container name="page" id="page">
+
+<h1>Book</h1>
+  <head>
+    <link rel="stylesheet" href="Homestyles.css" />
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+
+    <!--Navbar -->
+
+
+    <div class="box">
+      <form>
+        <label for="searchboxtitle">Search Title (i.e. Quidditch History)</label>
+        <input id="searchboxtitle" name="searchboxtitle" type="search">
+          <br />
+          <label for="searchboxauth">Search Author (i.e. Swangly Plato)</label>
+          <input id="searchboxauth" name="searchboxauth" type="search">
+
+            <br />
+            <label for="searchboxgenre">Search Genre (i.e. Quidditch)</label>
+            <input id="searchboxgenre" name="searchboxgenre" type="search">
+
+              <br />
+              <label for="submit"></label>
+              <input id="submit" name="submit" type="submit" value="Search">
+      
+      </form>
+    </div>
+    <div class="results">
+<table name="tabledata" id="tabledata">
+  <tbody>
+  <tr>
+    <th>Book_Id</th>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Genre</th>
+    </tr>
+    {{#items}}
+      <tr>
+        <td>{{book_id}}</td>        
+        <td>{{title}}</td>        
+        <td>{{author}}</td>        
+        <td>{{genre}}</td>        
+
+        
+      </tr>
+    {{/items}}
+  </tbody>
+    
+  
+</table>
+  <span id="update-change" name="update-change" class ="update-change"></span>
+  <p>{{results}}</p>
+
+      <script src="/book.js"></script>

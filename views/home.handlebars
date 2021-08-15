@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link rel="stylesheet" href="Homestyles.css" />
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <!--Navbar -->
+
+    <h1>Welcome To The Grand Library</h1>
+       <br />
+
+<table name="tabledata" id="tabledata">
+  <tbody>
+  <tr>
+    <th>book_id</th>
+    <th>Title</th>
+    <th>Author</th>
+	<th>Genre</th>
+    </tr>
+    {{#items}}
+      <tr>
+        <td>{{book_id}}</td>        
+        <td>{{title}}</td>        
+        <td>{{author}}</td>          
+        <td>{{genre}}</td>
+      </tr>
+    {{/items}}
+  </tbody>
+    
+  
+</table>
+
+  <p>{{results}}</p>
+
+
+  </body>

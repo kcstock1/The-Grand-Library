@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Profile Page</title>
+
+    <!-- This is a 3rd-party stylesheet to make available the font family to be used for this page ("Roboto"). -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+
+    <!-- This 3rd-party stylesheet incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Homestyles.css" />
+  </head>
+
+  <body>
+
+
+    <br \>
+    <br \>
+
+        <div class="box">
+      <form>
+		<h2>Add Genre </h2>
+        <label for="addgenreName">Name</label>
+        <input id="addgenreName" name="addgenreName" type="text">      
+        <br />
+        <label for="submitadd">Add</label>
+        <input id="submitadd" name="submitadd" type="submit" value="Add">
+      
+      </form>
+
+      <form>
+		<h2>Delete Genre </h2>
+        <label for="deletegenreName">Name</label>
+        <input id="deletegenreName" name="deletegenreName" type="text">        
+        <br />
+        <label for="submitdelete">Delete</label>
+        <input id="submitdelete" name="submitdelete" type="submit" value="Delete">
+      
+      </form>
+    </div> 
+
+	        <div class="box">
+      <form>
+		<h2>Update Genre </h2>
+        <label for="oldgenre">Existing Name</label>
+        <input id="oldgenre" name="oldgenre" type="text">
+        
+        <label for="newgenre">New Name</label>
+        <input id="newgenre" name="newgenre" type="text">
+        <br />
+        <br />
+        <label for="updategenresubmit"></label>
+        <input id="updategenresubmit" name="updategenresubmit" type="submit" value="Update">
+      
+      </form>
+    </div> 
+
+    
+
+  </body>
+  <script src="/genre.js"></script>
+</html>

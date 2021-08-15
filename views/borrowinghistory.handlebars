@@ -1,0 +1,55 @@
+<container name="page" id="page">
+
+<h1>Book</h1>
+  <head>
+    <link rel="stylesheet" href="Homestyles.css" />
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+
+    <!--Navbar -->
+
+
+    <div class="box">
+      <form>
+        <label for="searchboxtitle">Search Title</label>
+        <input id="searchboxtitle" name="searchboxtitle" type="search">
+          <br />
+          <label for="searchboxauth">Search Author</label>
+          <input id="searchboxauth" name="searchboxauth" type="search">
+
+            <br />
+            <label for="searchboxgenre">Search Genre</label>
+            <input id="searchboxgenre" name="searchboxgenre" type="search">
+
+              <br />
+              <label for="submit"></label>
+              <input id="submit" name="submit" type="submit" value="Search">
+      
+      </form>
+    </div>
+    <div class="results">
+
+  
+     <main class="borrowing-history">
+        <br />
+        <h2>Checked out books</h2>
+            <li>Potions I</li>
+            <br />
+            <li>History of Muggles</li>
+            <br />
+            <li>Sea plants</li>
+        <br />
+        <h2>Due Date</h2>
+            <li>After 2 weeks</li>
+
+            <br />
+        <h2>Return Date</h2>
+    </main>
+  
+</table>
+  <span id="update-change" name="update-change" class ="update-change"></span>
+  <p>{{results}}</p>
+
+      <script src="/client.js"></script>

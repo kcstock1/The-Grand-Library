@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Profile Page</title>
+
+    <!-- This is a 3rd-party stylesheet to make available the font family to be used for this page ("Roboto"). -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+
+    <!-- This 3rd-party stylesheet incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Homestyles.css" />
+  </head>
+
+  <body>
+
+
+     <div class="box">
+	   <h2>Add Book</h2>
+      <form>
+        <label for="addbooktitle">Title</label>
+        <input id="addbooktitle" name="addbooktitle" type="text">
+        <br />
+        <label for="addbookauth">Author</label>
+        <input id="addbookauth" name="addbookauth" type="text">
+      
+        <br />
+        <label for="genreoptions">Genre</label>        
+		<select name="genreoptions" id="genreoptions">
+	Genre
+	</select>
+	  <div id="container"></div>
+
+        <br />
+        <label for="addsubmit">Add</label>
+        <input id="addsubmit" name="addsubmit" type="submit" value="Add">
+      
+      </form>
+    </div>
+
+           <div class="box">
+	  <h2>Delete Book</h2>
+      <form>
+        <label for="deletebooktitle">Title</label>
+        <input id="deletebooktitle" name="deletebooktitle" type="text">
+        <br />
+        <label for="deletebookauthor">Author</label>
+        <input id="deletebookauthor" name="deletebookauthor" type="text">
+      
+        <br />
+        <label for="deletesubmit">Delete</label>
+        <input id="deletesubmit" name="deletesubmit" type="submit" value="Delete">
+      
+      </form>
+    </div> 
+
+
+  </body>
+  <script src="/adminbook.js"></script>
+</html>
